@@ -1,4 +1,4 @@
-package task2;
+package task3;
 
 public class Hero {
     private String name;
@@ -7,7 +7,8 @@ public class Hero {
         this.name = name;
     }
 
-    public void attackEnemy() {
+    public void attackEnemy(Enemy enemy) {
+        enemy.takeDamage(1);
         System.out.println("Hero " + getName() + " attack Enemy");
     }
 

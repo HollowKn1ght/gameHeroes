@@ -1,9 +1,11 @@
-package task6;
+package task7;
 
-public class Enemy implements Mortal {
+public abstract class Enemy implements Mortal {
+    private String name;
     private int health;
 
-    public Enemy(int health){
+    public Enemy(String name, int health){
+        this.name = name;
         this.health = health;
     }
 
@@ -11,9 +13,14 @@ public class Enemy implements Mortal {
         health -= damage;
     }
 
-    @Override
+    public abstract void attackHero(Hero hero);
+
     public boolean isAlive() {
         return health > 0;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getHealth() {

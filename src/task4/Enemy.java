@@ -1,4 +1,4 @@
-package task3;
+package task4;
 
 public class Enemy {
     private int health;

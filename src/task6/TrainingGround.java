@@ -1,8 +1,8 @@
-package task5;
+package task6;
 
-import task5.Classes.Archer;
-import task5.Classes.Mage;
-import task5.Classes.Warrior;
+import task6.Classes.Archer;
+import task6.Classes.Mage;
+import task6.Classes.Warrior;
 
 public class TrainingGround {
     public static void main(String[] args) {

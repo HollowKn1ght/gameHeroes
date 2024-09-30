@@ -1,6 +1,7 @@
-package task2.Classes;
+package task3.Classes;
 
-import task2.Hero;
+import task3.Enemy;
+import task3.Hero;
 
 public class Mage extends Hero {
     public Mage(String name) {
@@ -8,7 +9,8 @@ public class Mage extends Hero {
     }
 
     @Override
-    public void attackEnemy(){
+    public void attackEnemy(Enemy enemy){
+        enemy.takeDamage(5);
         System.out.println("Mage " + getName() + " attack Enemy");
     }
 }

@@ -1,4 +1,4 @@
-package task5;
+package task6;
 
 public abstract class Hero {
     private String name;

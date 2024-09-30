@@ -1,4 +1,4 @@
-package task1;
+package task2;
 
 public class Hero {
     private String name;
@@ -8,7 +8,7 @@ public class Hero {
     }
 
     public void attackEnemy() {
-        System.out.println("Hero " + name + " attack Enemy");
+        System.out.println("Hero " + getName() + " attack Enemy");
     }
 
     public String getName() {

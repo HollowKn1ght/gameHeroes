@@ -1,16 +1,13 @@
-package task3;
+package task4;
 
-public class Hero {
+public abstract class Hero {
     private String name;
 
     public Hero(String name) {
         this.name = name;
     }
 
-    public void attackEnemy(Enemy enemy) {
-        enemy.takeDamage(1);
-        System.out.println("Hero " + getName() + " attack Enemy");
-    }
+    public abstract void attackEnemy(Enemy enemy);
 
     public String getName() {
         return name;

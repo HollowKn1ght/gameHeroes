@@ -1,6 +1,6 @@
-package task4;
+package task5;
 
-public class Enemy {
+public class Enemy implements Mortal{
     private int health;
 
     public Enemy(int health){
@@ -9,6 +9,11 @@ public class Enemy {
 
     public void takeDamage(int damage){
         health -= damage;
+    }
+
+    @Override
+    public boolean isAlive() {
+        return health > 0;
     }
 
     public int getHealth() {

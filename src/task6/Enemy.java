@@ -1,6 +1,6 @@
-package task5;
+package task6;
 
-public class Enemy implements Mortal{
+public class Enemy implements Mortal {
     private int health;
 
     public Enemy(int health){

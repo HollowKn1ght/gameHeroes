@@ -1,5 +1,8 @@
-public class Main {
+package task1;
+
+public class TrainingGround {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Hero hero = new Hero("Alex");
+        hero.attackEnemy();
     }
 }

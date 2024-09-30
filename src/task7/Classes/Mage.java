@@ -1,16 +1,16 @@
-package task6.Classes;
+package task7.Classes;
 
-import task6.Enemy;
-import task6.Hero;
+import task7.Enemy;
+import task7.Hero;
 
 public class Mage extends Hero {
-    public Mage(String name) {
-        super(name);
+    public Mage(String name, int health) {
+        super(name, health);
     }
 
     @Override
     public void attackEnemy(Enemy enemy){
+        System.out.println("Mage " + getName() + " attack " + enemy.getName());
         enemy.takeDamage(5);
-        System.out.println("Mage " + getName() + " attack Enemy");
     }
 }

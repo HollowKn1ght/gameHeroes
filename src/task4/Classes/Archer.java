@@ -1,7 +1,7 @@
-package task3.Classes;
+package task4.Classes;
 
-import task3.Enemy;
-import task3.Hero;
+import task4.Enemy;
+import task4.Hero;
 
 public class Archer extends Hero {
     public Archer(String name) {

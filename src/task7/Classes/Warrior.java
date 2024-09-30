@@ -1,16 +1,16 @@
-package task6.Classes;
+package task7.Classes;
 
-import task6.Enemy;
-import task6.Hero;
+import task7.Enemy;
+import task7.Hero;
 
 public class Warrior extends Hero {
-    public Warrior(String name) {
-        super(name);
+    public Warrior(String name, int health) {
+        super(name, health);
     }
 
     @Override
     public void attackEnemy(Enemy enemy){
+        System.out.println("Warrior " + getName() + " attack " + enemy.getName());
         enemy.takeDamage(3);
-        System.out.println("Warrior " + getName() + " attack Enemy");
     }
 }
